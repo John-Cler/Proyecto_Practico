@@ -12,7 +12,7 @@ Este proyecto utiliza:
 Para construir el proyecto ejecute:
 
 ```bash
-./mvnw clean package
+./mvnw clean package -X
 ````
 
 Para correr el proyecto ejecute:

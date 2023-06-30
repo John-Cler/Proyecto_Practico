@@ -1,0 +1,23 @@
+### Obtener todos los estados
+GET http://localhost:8080/api/v1/state
+
+### Obtener un estado por su ID
+GET http://localhost:8080/api/v1/state/1
+
+### Crear un nuevo estado
+POST http://localhost:8080/api/v1/state
+Content-Type: application/json
+
+{
+  "name": "New York",
+  "countryId": 2
+}
+
+### Actualizar un estado existente
+PUT http://localhost:8080/api/v1/state/2
+Content-Type: application/json
+
+{
+  "name": "Madrid",
+  "countryId": 1
+}

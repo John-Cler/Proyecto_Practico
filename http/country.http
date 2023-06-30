@@ -1,0 +1,21 @@
+### Obtener todos los países
+GET http://localhost:8080/api/v1/country
+
+### Obtener un país por su ID
+GET http://localhost:8080/api/v1/country/1
+
+### Crear un nuevo país
+POST http://localhost:8080/api/v1/country
+Content-Type: application/json
+
+{
+  "name": "Argentina"
+}
+
+### Actualizar un país existente
+PUT http://localhost:8080/api/v1/country/2
+Content-Type: application/json
+
+{
+  "name": "United States of America"
+}

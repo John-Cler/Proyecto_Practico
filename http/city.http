@@ -1,0 +1,23 @@
+### Obtener todas las ciudades
+GET http://localhost:8080/api/v1/city
+
+### Obtener una ciudad por su ID
+GET http://localhost:8080/api/v1/city/1
+
+### Crear una nueva ciudad
+POST http://localhost:8080/api/v1/city
+Content-Type: application/json
+
+{
+  "name": "New York",
+  "stateId": 2
+}
+
+### Actualizar una ciudad existente
+PUT http://localhost:8080/api/v1/city/2
+Content-Type: application/json
+
+{
+  "name": "Paris",
+  "stateId": 3
+}
