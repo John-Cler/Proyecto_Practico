@@ -1,0 +1,137 @@
+### Obtener todas las filas de la tabla
+GET http://localhost:8080/api/v1/table
+
+### Crear un registro de la tabla
+POST http://localhost:8080/api/v1/table
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "country": {
+      "id": 1,
+      "name": "Spain"
+    },
+    "state": {
+      "id": 1,
+      "name": "Madrid",
+      "countryId": 1
+    },
+    "city": {
+      "id": 1,
+      "name": "Madrid",
+      "stateId": 1
+    }
+  },
+  {
+    "id": 2,
+    "country": {
+      "id": 2,
+      "name": "United States"
+    },
+    "state": {
+      "id": 2,
+      "name": "California",
+      "countryId": 2
+    },
+    "city": {
+      "id": 2,
+      "name": "Los Angeles",
+      "stateId": 2
+    }
+  },
+  {
+    "id": 3,
+    "country": {
+      "id": 3,
+      "name": "France"
+    },
+    "state": {
+      "id": 3,
+      "name": "Paris",
+      "countryId": 3
+    },
+    "city": {
+      "id": 3,
+      "name": "Paris",
+      "stateId": 3
+    }
+  }
+]
+
+
+### Verficar que no hay registros repetidos
+POST http://localhost:8080/api/v1/table
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "country": {
+      "id": 1,
+      "name": "Spain"
+    },
+    "state": {
+      "id": 1,
+      "name": "Madrid",
+      "countryId": 1
+    },
+    "city": {
+      "id": 1,
+      "name": "Madrid",
+      "stateId": 1
+    }
+  },
+  {
+    "id": 2,
+    "country": {
+      "id": 2,
+      "name": "United States"
+    },
+    "state": {
+      "id": 2,
+      "name": "California",
+      "countryId": 2
+    },
+    "city": {
+      "id": 2,
+      "name": "Los Angeles",
+      "stateId": 2
+    }
+  },
+  {
+    "id": 3,
+    "country": {
+      "id": 3,
+      "name": "France"
+    },
+    "state": {
+      "id": 3,
+      "name": "Paris",
+      "countryId": 3
+    },
+    "city": {
+      "id": 3,
+      "name": "Paris",
+      "stateId": 3
+    }
+  },
+  {
+    "id": 4,
+    "country": {
+      "id": 1,
+      "name": "Spain"
+    },
+    "state": {
+      "id": 1,
+      "name": "Madrid",
+      "countryId": 1
+    },
+    "city": {
+      "id": 1,
+      "name": "Madrid",
+      "stateId": 1
+    }
+  }
+]
+
