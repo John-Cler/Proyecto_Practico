@@ -9,21 +9,13 @@ Este proyecto utiliza:
 
 ## Como construir
 
-Para construir el proyecto ejecute:
+Para construir el proyecto ejecuté:
 
 ```bash
 ./mvnw clean package -X
 ````
 
-Para correr el proyecto ejecute:
+Para correr el proyecto ejecuté:
 ```bash
 ./mvnw spring-boot:run
-```
-
-## Ejecución con Chaos Engeenering
-
-Para ejecutar en modo Chaos Engeenerin se de invocar de la siguiente manera:
-
-```bash
-./mvnw clean package spring-boot:run -Dspring-boot.run.profiles=chaos-monkey
 ```
