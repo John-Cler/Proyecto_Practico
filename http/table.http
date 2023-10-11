@@ -22,40 +22,6 @@ Content-Type: application/json
       "name": "Madrid",
       "stateId": 1
     }
-  },
-  {
-    "id": 2,
-    "country": {
-      "id": 2,
-      "name": "United States"
-    },
-    "state": {
-      "id": 2,
-      "name": "California",
-      "countryId": 2
-    },
-    "city": {
-      "id": 2,
-      "name": "Los Angeles",
-      "stateId": 2
-    }
-  },
-  {
-    "id": 3,
-    "country": {
-      "id": 3,
-      "name": "France"
-    },
-    "state": {
-      "id": 3,
-      "name": "Paris",
-      "countryId": 3
-    },
-    "city": {
-      "id": 3,
-      "name": "Paris",
-      "stateId": 3
-    }
   }
 ]
 

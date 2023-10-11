@@ -142,6 +142,36 @@ Actualiza los detalles de un estado existente basado en su ID, utilizando los da
 }
 ```
 
+## Endpoint para los paises seleccionados.
+
+### Agregar un pais a la lista de paises seleccionados
+
+`POST http://localhost:8080/api/v1/table`
+
+Agrega un pais a la lista de paises seleccionados con los detalles proporcionados en el cuerpo de la solicitud.
+
+```json
+[
+  {
+    "id": 1,
+    "country": {
+      "id": 1,
+      "name": "Spain"
+    },
+    "state": {
+      "id": 1,
+      "name": "Madrid",
+      "countryId": 1
+    },
+    "city": {
+      "id": 1,
+      "name": "Madrid",
+      "stateId": 1
+    }
+  }
+]
+```
+
 ## Ejecución
 
 1. Clona el repositorio.
