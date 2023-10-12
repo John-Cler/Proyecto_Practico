@@ -1,10 +1,12 @@
 package bo.edu.ucb.springbackstatemgmt.bl;
 
 import bo.edu.ucb.springbackstatemgmt.dto.CityDto;
+import bo.edu.ucb.springbackstatemgmt.dto.StateDto;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class CityBl {
@@ -19,6 +21,12 @@ public class CityBl {
 
     public List<CityDto> getAllCities() {
         return cities;
+    }
+
+    public List<CityDto> getCitiesByState(Long stateId) {
+        return cities.stream()
+                .filter(city -> city.getStateId().equals(stateId))
+                .collect(Collectors.toList());
     }
 
     public CityDto createCity(CityDto city) {

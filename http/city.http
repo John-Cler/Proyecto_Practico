@@ -1,3 +1,6 @@
+### Obtener todas las ciudades por estado
+GET http://localhost:8080/api/v1/city/state/2
+
 ### Obtener todas las ciudades
 GET http://localhost:8080/api/v1/city
 
