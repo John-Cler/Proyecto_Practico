@@ -4,12 +4,12 @@ spring:
 
 chaos:
   monkey:
-    enabled: true
+    enabled: false
     watcher:
       service: false
       controller: false
       repository: false
-      restController: true
+      restController: false
     assaults:
       level: 3
       latencyActive: true
