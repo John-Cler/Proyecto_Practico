@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class StateBl {
@@ -19,6 +20,13 @@ public class StateBl {
 
     public List<StateDto> getAllStates() {
         return states;
+    }
+
+    // Obtenemos todos los estados por el id del país
+    public List<StateDto> getStatesByCountryId(Long countryId) {
+        return states.stream()
+                .filter(state -> state.getCountryId().equals(countryId))
+                .collect(Collectors.toList());
     }
 
     public StateDto createState(StateDto state) {

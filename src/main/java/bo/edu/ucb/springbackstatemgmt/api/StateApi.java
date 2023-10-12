@@ -22,6 +22,11 @@ public class StateApi {
         return stateBl.getAllStates();
     }
 
+    @GetMapping("/country/{id}")
+    public List<StateDto> getAllStatesByCoountry(@PathVariable("id") Long id) {
+        return stateBl.getStatesByCountryId(id);
+    }
+
     @GetMapping("/{id}")
     public StateDto getStateById(@PathVariable("id") String id) {
         return stateBl.getStateById(id);
