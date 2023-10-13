@@ -2,6 +2,7 @@ package bo.edu.ucb.springbackstatemgmt.api;
 
 import bo.edu.ucb.springbackstatemgmt.bl.CityBl;
 import bo.edu.ucb.springbackstatemgmt.dto.CityDto;
+import bo.edu.ucb.springbackstatemgmt.dto.StateDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,6 +16,11 @@ public class CityApi {
     @Autowired
     public CityApi(CityBl cityBl) {
         this.cityBl = cityBl;
+    }
+
+    @GetMapping("/state/{id}")
+    public List<CityDto> getAllCitiesByState(@PathVariable("id") Long id) {
+        return cityBl.getCitiesByState(id);
     }
 
     @GetMapping

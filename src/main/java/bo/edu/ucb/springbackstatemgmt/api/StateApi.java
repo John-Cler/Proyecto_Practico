@@ -23,7 +23,7 @@ public class StateApi {
     }
 
     @GetMapping("/country/{id}")
-    public List<StateDto> getAllStatesByCoountry(@PathVariable("id") Long id) {
+    public List<StateDto> getAllStatesByCountry(@PathVariable("id") Long id) {
         return stateBl.getStatesByCountryId(id);
     }
 
